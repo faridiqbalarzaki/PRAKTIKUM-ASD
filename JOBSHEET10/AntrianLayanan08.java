@@ -72,4 +72,14 @@ public class AntrianLayanan08 {
     public int getJumlahAntrian() {
         return size;
     }
+
+    public void lihatAkhir() {
+        if (isEmpty()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.print("Mahasiswa paling belakang: ");
+            System.out.println("\nNIM \t NAMA \t PRODI \t KELAS");
+            data[rear].tampilkanData();
+        }
+    }
 }
