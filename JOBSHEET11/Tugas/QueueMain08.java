@@ -70,7 +70,6 @@ public class QueueMain08 {
                     System.out.println("Pilihan menu tidak valid!");
             }
         } while (menu != 0);
-
         sc.close();
     }
 }
