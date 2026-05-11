@@ -6,7 +6,6 @@ public class SLLMain08 {
     public static void main(String[] args) {
         SingleLinkedList08 sll = new SingleLinkedList08();
 
-        // 14. Buat empat object mahasiswa [cite: 118]
         Mahasiswa08 mhs1 = new Mahasiswa08("24212200", "Alvaro", "1A", 4.0);
         Mahasiswa08 mhs2 = new Mahasiswa08("23212201", "Bimon", "2B", 3.8);
         Mahasiswa08 mhs3 = new Mahasiswa08("22212202", "Cintia", "3C", 3.5);
