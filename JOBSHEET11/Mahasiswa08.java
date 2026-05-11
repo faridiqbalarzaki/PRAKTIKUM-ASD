@@ -1,4 +1,4 @@
-package JONSHEET11;
+package JOBSHEET11;
 
 public class Mahasiswa08 {
     String nim;

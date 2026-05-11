@@ -1,4 +1,4 @@
-package JONSHEET11;
+package JOBSHEET11;
 
 public class NodeMahasiswa08 {
     Mahasiswa08 data;

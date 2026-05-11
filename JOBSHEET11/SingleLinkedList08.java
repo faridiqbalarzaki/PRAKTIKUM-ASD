@@ -1,4 +1,4 @@
-package JONSHEET11;
+package JOBSHEET11;
 
 public class SingleLinkedList08 {
     NodeMahasiswa08 head;
