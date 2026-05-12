@@ -1,4 +1,4 @@
-package JOBSHEET12_Praktikum2;
+package JOBSHEET12.Praktikum2;
 
 public class Node08 {
     Mahasiswa08 data;

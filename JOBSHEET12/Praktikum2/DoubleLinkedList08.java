@@ -1,4 +1,4 @@
-package JOBSHEET12;
+package JOBSHEET12.Praktikum2;
 
 public class DoubleLinkedList08 {
     Node08 head;
@@ -73,15 +73,30 @@ public class DoubleLinkedList08 {
         }
     }
 
-    public void printReverse() {
+    public void removeFirst() {
         if (isEmpty()) {
-            System.out.println("Linked List masih kosong.");
+            System.out.println("Linked List kosong.");
             return;
         }
-        Node08 current = tail;
-        while (current != null) {
-            current.data.tampil();
-            current = current.prev;
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
         }
     }
+
+    public void removeLast() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong.");
+            return;
+        }
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+        }
+    }
+
 }
