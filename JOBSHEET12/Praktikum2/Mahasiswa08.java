@@ -20,4 +20,5 @@ public class Mahasiswa08 {
                         "\nKelas : " + kelas +
                         "\nIPK   : " + ipk);
     }
+
 }

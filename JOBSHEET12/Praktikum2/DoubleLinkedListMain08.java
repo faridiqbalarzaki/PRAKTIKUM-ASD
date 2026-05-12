@@ -30,6 +30,12 @@ public class DoubleLinkedListMain08 {
             System.out.println("4. Hapus data di awal");
             System.out.println("5. Hapus data di akhir");
             System.out.println("6. Tampilkan data");
+            System.out.println("7. Hapus data pada indeks tertentu");
+            System.out.println("8. Hapus data setelah NIM tertentu");
+            System.out.println("9. Tampilkan Node Pertama");
+            System.out.println("10. Tampilkan Node Terakhir");
+            System.out.println("11. Tampilkan Node Berdasarkan Indeks");
+            System.out.println("12. Tampilkan semua data");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = scan.nextInt();
@@ -58,6 +64,32 @@ public class DoubleLinkedListMain08 {
                     list.removeLast();
                     break;
                 case 6:
+                    list.print();
+                    break;
+                case 7:
+                    System.out.print("Masukkan Indeks yang akan dihapus: ");
+                    int rmIdx = scan.nextInt();
+                    scan.nextLine();
+                    list.remove(rmIdx);
+                    break;
+                case 8:
+                    System.out.print("Masukkan NIM referensi (data setelahnya akan dihapus): ");
+                    String rmNim = scan.nextLine();
+                    list.removeAfter(rmNim);
+                    break;
+                case 9:
+                    list.getFirst();
+                    break;
+                case 10:
+                    list.getLast();
+                    break;
+                case 11:
+                    System.out.print("Masukkan Indeks yang dicari: ");
+                    int getIdx = scan.nextInt();
+                    scan.nextLine();
+                    list.getIndex(getIdx);
+                    break;
+                case 12:
                     list.print();
                     break;
                 case 0:
